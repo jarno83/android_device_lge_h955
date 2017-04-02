@@ -1,0 +1,7 @@
+ro.hardware.keystore=msm8994
+persist.sys.usb.config=mtp,adb
+
+# H955 model
+#ro.product.device=h955
+#ro.product.model=LG-H955
+#ro.product.name=z2_global_com
