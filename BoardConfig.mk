@@ -45,6 +45,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
+# TWRP flags
+
 TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_NO_USB_STORAGE := true
@@ -53,6 +55,8 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_SCREEN_BLANK_ON_BOOT := true
+# Always use rm -rf to wipe - needed for restoring /system with FIsH on h955.
+TW_ALWAYS_RMRF := true
 # /sys/devices/soc.0/fd900000.qcom,mdss_mdp/qcom,mdss_fb_primary.186/leds/lcd-backlight/brightness
 TW_BRIGHTNESS_PATH := "/sys/devices/soc.0/fd900000.qcom\x2cmdss_mdp/qcom\x2cmdss_fb_primary.186/leds/lcd-backlight/brightness"
 #TW_BOARD_CUSTOM_GRAPHICS := ../../../device/lge/h955/graphics.c
